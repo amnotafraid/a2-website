@@ -3,10 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent }  from './app.component';
 
+import { AboutComponent } from './components/pages/about.component';
+import { HomeComponent } from './components/pages/home.component';
+import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+
 @NgModule({
   imports:      [ BrowserModule ],
-  declarations: [ AppComponent, NavbarComponent ],
+  declarations: [ 
+                  AboutComponent,
+                  AppComponent, 
+                  HomeComponent,
+                  JumbotronComponent 
+                  NavbarComponent, 
+                ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
